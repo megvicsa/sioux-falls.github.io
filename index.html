@@ -206,20 +206,20 @@
         let startPoint = null;
         let endPoint = null;
         let poiMarkers = [];
-        let mapNum = -1; // SET MAP NUMBER    
+        let mapNum = 47; // SET MAP NUMBER    
 
         // Function to add a marker at a specific point on the map
         const instructions = [
-            { title: "Current Time", info: "7:37 AM" },
-            { title: "Address of Origin", info: "351 Post Rd, Rosharon, TX 77583" },
-            { title: "Address of Destination", info: "13551 Westpark Dr, Houston, TX 77082" },
+            { title: "Current Time", info: "3:41 PM" },
+            { title: "Address of Origin", info: "210 N Sherman Ave, Sioux Falls, SD 57103" },
+            { title: "Address of Destination", info: "707 N Grange Ave, Sioux Falls, SD 57104" },
             { title: "Distance of Destination", info: "28.8" },
             { title: "Estimated Time to Destination", info: "40" },
-            { title: "State of Charge of Battery", info: "15% Charge" },
-            { title: "Range of Current Battery", info: "45 Minutes" },
-            { title: "Estimated Drive-distance with Current Charge", info: "30 Miles" },
+            { title: "State of Charge of Battery", info: "27% Charge" },
+            { title: "Range of Current Battery", info: "81 Minutes" },
+            { title: "Estimated Drive-distance with Current Charge", info: "60 Miles" },
             { title: "Type of Chargin Socket", info: "J1772" },
-            { title: "kW Needed to Fully Charge Your Car", info: "51 kW" }
+            { title: "kW Needed to Fully Charge Your Car", info: "43.8 kW" }
         ];
 
 
@@ -244,13 +244,13 @@
                         { type: 'J1772', value: '2' }
                     ],    
                 chargeTime: [
-                        { type: 'J1772', value: '' }
+                        { type: 'J1772', value: '405' }
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '2 available' }
                     ],
 
-                energySource: 'Energy Breakdown: 0% Grid, 0% Solar',
+                energySource: 'Energy Breakdown: 35% Grid, 65% Renewable',
 
                 chargingFee: '$0.03',
                 chargingFeeRate: 'per minute',
@@ -261,8 +261,8 @@
                 grocery: 'Yes <br><br> There is a grocery store in walking distance... 0 mile',
                 sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance... 0 miles',
                 
-                rating: '★ ★ ★ ✰ ✰',
-                ratingNum: ''
+                rating: '★ ★ ★ ★ ★',
+                ratingNum: '40'
             },
             {
                 coordinates: [-96.727981, 43.55435],
@@ -283,13 +283,13 @@
                         { type: 'J1772', value: '2' }
                     ],    
                 chargeTime: [
-                        { type: 'J1772', value: '' }
+                        { type: 'J1772', value: '405' }
                     ],
                 socketAvalability: [
                         { type: 'J1772', value: '2 available' }
                     ],  
 
-                energySource: 'Energy Breakdown: 0% Grid',
+                energySource: 'Energy Breakdown: 80% Grid 20% Renewable',
 
                 chargingFee: '$3.00',
                 chargingFeeRate: 'per hour',
