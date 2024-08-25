@@ -217,7 +217,7 @@
             { title: "Estimated Time to Destination", info: "40" },
             { title: "State of Charge of Battery", info: "27% Charge." },
             { title: "Range of Current Battery", info: "81 Minutes." },
-            { title: "Estimated Drive-distance with Current Charge", info: "60 Miles". },
+            { title: "Estimated Drive Distance with Current Charge", info: "60 Miles". },
             { title: "Type of Chargin Socket", info: "J1772." },
             { title: "kW Needed to Fully Charge Your Car", info: "43.8 kW." }
         ];
@@ -247,19 +247,19 @@
                         { type: 'J1772', value: '405' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '2 available' }
+                        { type: 'J1772', value: '2' }
                     ],
 
                 energySource: '35% Grid, 65% Renewable',
 
                 chargingFee: '$0.03',
                 chargingFeeRate: 'per minute',
-                parkingFee: 'free',
+                parkingFee: '$0.00',
                 parkingFeeRate: 'for the first four hours',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.3 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.5 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.3 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.5 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.5 miles away.',
                 
                 rating: '★ ★ ★ ★ ★',
                 ratingNum: '40'
@@ -267,7 +267,7 @@
             {
                 coordinates: [-96.727981, 43.55435],
                 imageUrl: 'https://photos.plugshare.com/photos/1142798.jpg',
-                name: 'PLSTATION PALOFT',
+                name: 'PLStation Paloft',
 
                 location: '616 N Main Ave, Sioux Falls 57104',
                 originDistance: ' Miles',
@@ -286,7 +286,7 @@
                         { type: 'J1772', value: '405' }
                     ],
                 socketAvalability: [
-                        { type: 'J1772', value: '2 available' }
+                        { type: 'J1772', value: '2' }
                     ],  
 
                 energySource: '80% Grid 20% Renewable',
@@ -294,12 +294,12 @@
                 chargingFee: '$3.00',
                 chargingFeeRate: 'per hour',
 
-                parkingFee: 'free',
+                parkingFee: '$0.00',
                 parkingFeeRate: 'for any amount of time',
 
-                coffee: 'Yes <br><br> There is a coffee shop in walking distance 0.2 miles away.',
-                grocery: 'Yes <br><br> There is a grocery store in walking distance 0.8 miles away.',
-                sportsClothes: 'Yes <br><br> There is a sports or clothing store in walking distance 0.7 miles away.',
+                coffee: 'Yes. <br><br> There is a coffee shop in walking distance 0.2 miles away.',
+                grocery: 'Yes. <br><br> There is a grocery store in walking distance 0.8 miles away.',
+                sportsClothes: 'Yes. <br><br> There is a sports or clothing store in walking distance 0.7 miles away.',
                 
                 rating: '',
                 ratingNum: '0'
@@ -583,7 +583,7 @@
             content = `<p style="font-size: 16px; padding: 5px;">${infoContent}</p>`;
 
             if (infoType === 'rating') {
-                content = `<p style="font-size: 16px; padding: 5px;"><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews</p>`;
+                content = `<p style="font-size: 16px; padding: 5px;"><b>Rating:</b><br><span class="stars">${station.rating}</span> <br><br> There are ${station.ratingNum} total reviews.</p>`;
                 console.log('Rating clicked');
             }
 
